@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>International TBM Youth Sangha | Registration</title>
+<style>
+:root{--blue:#173b87;--blue2:#2357b7;--yellow:#ffd447;--red:#d9363e;--ink:#18243a;--muted:#65728a;--glass:rgba(255,255,255,.96)}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:#eef3fb}
+.hero{min-height:100vh;padding:26px 18px 42px;background:linear-gradient(120deg,rgba(9,27,71,.9),rgba(18,52,119,.72)),url('Buddhabackgroundtriratna.png') center/cover fixed}
+.topbar{max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between;color:white;gap:16px}.brand{font-weight:800;font-size:1.1rem}.brand small{display:block;font-weight:500;opacity:.85;font-size:.78rem;margin-top:3px}.pills{display:flex;gap:7px}.pill{width:15px;height:15px;border-radius:50%}.blue{background:#4c89ff}.yellow{background:var(--yellow)}.red{background:var(--red)}
+main {
+  max-width: 1100px;
+  margin: 40px auto 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: start;
+}.eyebrow{display:inline-block;color:var(--ink);background:var(--yellow);font-weight:800;font-size:.78rem;padding:7px 12px;border-radius:99px}h1{font-size:clamp(2rem,5vw,3.5rem);line-height:1.05;margin:20px 0 14px}.intro p{line-height:1.7;color:#edf3ff}.features{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}.feature{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:99px;padding:9px 13px;color:white}
+.panel {
+  background: var(--glass);
+  backdrop-filter: blur(10px);
+  border-radius: 22px;
+  padding: 24px;
+  box-shadow: 0 18px 50px rgba(0,0,0,.2);
+  width: 100%;
+  min-width: 0;
+  height: auto;
+  overflow: visible;
+}
+label{display:block;font-weight:650;font-size:.9rem;margin:12px 0 6px}input,select,textarea{width:100%;padding:12px;border:1px solid #d6deeb;border-radius:11px;background:white;font:inherit;color:var(--ink)}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.btn{display:block;width:100%;border:0;border-radius:12px;padding:14px;font-weight:800;font-size:1rem;cursor:pointer;background:var(--yellow);color:var(--ink);margin-top:16px}.btn.secondary{background:var(--blue);color:white}.btn:disabled{opacity:.5;cursor:not-allowed}
+.summary{background:#f1f5fb;border-radius:12px;padding:14px;margin:14px 0;line-height:1.6}.page{display:none}.slots{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:12px 0}.slot{border:1px solid #d6deeb;border-radius:10px;padding:10px;text-align:center;background:white;cursor:pointer}.slot.selected{border:2px solid var(--blue2);background:#edf4ff;}.slot.booked{opacity:.45;cursor:not-allowed;background:#eee}.slot small{display:block;color:var(--muted)}.qrbox{border:2px dashed #b7c6dc;border-radius:14px;padding:16px;text-align:center;background:#fff}.qrbox img{max-width:220px;max-height:220px;object-fit:contain}.notice{font-size:.82rem;color:#66758e;line-height:1.5;margin-top:12px}footer{max-width:1100px;margin:25px auto 0;color:white;text-align:center}footer a{color:#ffe27a;margin:0 8px;text-decoration:none}
+@media(max-width:800px){main{grid-template-columns:1fr;margin-top:25px}.hero{background-attachment:scroll}.intro{padding:8px}}@media(max-width:500px){.slots{grid-template-columns:repeat(2,1fr)}.grid2{grid-template-columns:1fr}}
+/* ===== Attractive Main Heading ===== */
+
+.intro {
+    color: white;
+    padding: 15px;
+}
+
+.main-heading {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 900;
+    line-height: 1.12;
+    letter-spacing: -2px;
+    color: #ffffff;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+    margin: 25px 0;
+}
+
+.main-heading span {
+    color: #ffd447;
+    text-shadow: 0 0 25px rgba(255, 212, 71, 0.25);
+}
+
+.intro p {
+    font-size: 1.05rem;
+    color: #f1f5ff;
+    max-width: 550px;
+}
+
+.features .feature {
+    backdrop-filter: blur(8px);
+    transition: 0.3s ease;
+}
+
+.features .feature:hover {
+    transform: translateY(-3px);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* ===== Theme Color Buttons ===== */
+
+.pills {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.pill {
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: 0.25s ease;
+    box-shadow: 0 0 10px rgba(255,255,255,0.2);
+}
+
+.pill:hover {
+    transform: scale(1.25);
+}
+
+.pill:focus-visible {
+    outline: 3px solid white;
+    outline-offset: 4px;
+}
+
+/* Default Blue Theme */
+
+:root {
+    --theme-primary: #2357b7;
+    --theme-accent: #ffd447;
+    --theme-glow: rgba(35, 87, 183, 0.35);
+}
+
+/* Yellow Theme */
+
+body.theme-yellow {
+    --theme-primary: #b8860b;
+    --theme-accent: #ffdf55;
+    --theme-glow: rgba(184, 134, 11, 0.35);
+}
+
+/* Red Theme */
+
+body.theme-red {
+    --theme-primary: #c62828;
+    --theme-accent: #ff6b6b;
+    --theme-glow: rgba(198, 40, 40, 0.35);
+}
+
+/* Apply Theme Colors */
+
+.btn.secondary {
+    background: var(--theme-primary);
+    transition: 0.3s ease;
+}
+
+.eyebrow {
+    background: var(--theme-accent);
+    transition: 0.3s ease;
+}
+
+.slot.selected {
+    border-color: var(--theme-primary);
+    box-shadow: 0 0 10px var(--theme-glow);
+}
+
+.main-heading span {
+    color: var(--theme-accent);
+}
+</style>
+</head>
+<body><div class="hero">
+<header class="topbar"><div class="brand">International TBM Youth Sangha<small>Compassion • Wisdom • Community</small></div><div class="pills">
+    <button class="pill blue" data-theme="blue"
+            title="Blue Theme" aria-label="Blue Theme"></button>
+
+    <button class="pill yellow" data-theme="yellow"
+            title="Yellow Theme" aria-label="Yellow Theme"></button>
+
+    <button class="pill red" data-theme="red"
+            title="Red Theme" aria-label="Red Theme"></button>
+</div></header>
+<main>
+<section class="intro"><span class="eyebrow">WELCOME • YOUTH COMMUNITY</span><h1 class="main-heading">
+    Learn. Connect.
+    <br>
+    <span>Grow in Dhamma.</span>
+</h1><p>A welcoming space for young people to connect, learn, and grow through the teachings and values of Buddhism.</p><div class="features"><span class="feature">🪷 Dhamma & learning</span><span class="feature">🤝 Youth community</span><span class="feature">🌱 Mindful growth</span></div></section>
+<section class="panel">
+<div id="register" class="page" style="display:block"><h2>Registration</h2><p class="sub">Fill your details to begin.</p><form id="form">
+<label>Full name *</label><input name="name" required autocomplete="name">
+<div class="grid2"><div><label>Age *</label><input name="age" type="number" min="13" max="100" required></div><div><label>City *</label><input name="city" required></div></div>
+<label>Mobile number *</label><input name="phone" type="tel" required pattern="[0-9]{10}">
+
+
+
+<label>Email (optional)</label><input name="email" type="email">
+<label for="participants">Number of participants *</label>
+
+<select id="participants" name="participants" required>
+    <option value="">Select participants</option>
+
+    <option value="1">1 participant</option>
+    <option value="2">2 participants</option>
+    <option value="3">3 participants</option>
+    <option value="4">4 participants</option>
+    <option value="5">5 participants</option>
+    <option value="6">6 participants</option>
+    <option value="7">7 participants</option>
+    <option value="8">8 participants</option>
+    <option value="9">9 participants</option>
+    <option value="10">10 participants</option>
+
+    <option value="11">11 participants</option>
+    <option value="12">12 participants</option>
+    <option value="13">13 participants</option>
+    <option value="14">14 participants</option>
+    <option value="15">15 participants</option>
+    <option value="16">16 participants</option>
+    <option value="17">17 participants</option>
+    <option value="18">18 participants</option>
+    <option value="19">19 participants</option>
+    <option value="20">20 participants</option>
+
+    <option value="21">21 participants</option>
+    <option value="22">22 participants</option>
+    <option value="23">23 participants</option>
+    <option value="24">24 participants</option>
+    <option value="25">25 participants</option>
+    <option value="26">26 participants</option>
+    <option value="27">27 participants</option>
+    <option value="28">28 participants</option>
+    <option value="29">29 participants</option>
+    <option value="30">30 participants</option>
+
+    <option value="31">31 participants</option>
+    <option value="32">32 participants</option>
+    <option value="33">33 participants</option>
+    <option value="34">34 participants</option>
+    <option value="35">35 participants</option>
+    <option value="36">36 participants</option>
+    <option value="37">37 participants</option>
+    <option value="38">38 participants</option>
+    <option value="39">39 participants</option>
+    <option value="40">40 participants</option>
+
+    <option value="41">41 participants</option>
+    <option value="42">42 participants</option>
+    <option value="43">43 participants</option>
+    <option value="44">44 participants</option>
+    <option value="45">45 participants</option>
+    <option value="46">46 participants</option>
+    <option value="47">47 participants</option>
+    <option value="48">48 participants</option>
+    <option value="49">49 participants</option>
+    <option value="50">50 participants</option>
+
+    <option value="51">51 participants</option>
+    <option value="52">52 participants</option>
+    <option value="53">53 participants</option>
+    <option value="54">54 participants</option>
+    <option value="55">55 participants</option>
+    <option value="56">56 participants</option>
+    <option value="57">57 participants</option>
+    <option value="58">58 participants</option>
+    <option value="59">59 participants</option>
+    <option value="60">60 participants</option>
+
+    <option value="61">61 participants</option>
+    <option value="62">62 participants</option>
+    <option value="63">63 participants</option>
+    <option value="64">64 participants</option>
+    <option value="65">65 participants</option>
+    <option value="66">66 participants</option>
+    <option value="67">67 participants</option>
+    <option value="68">68 participants</option>
+    <option value="69">69 participants</option>
+    <option value="70">70 participants</option>
+
+    <option value="71">71 participants</option>
+    <option value="72">72 participants</option>
+    <option value="73">73 participants</option>
+    <option value="74">74 participants</option>
+    <option value="75">75 participants</option>
+    <option value="76">76 participants</option>
+    <option value="77">77 participants</option>
+    <option value="78">78 participants</option>
+    <option value="79">79 participants</option>
+    <option value="80">80 participants</option>
+
+    <option value="81">81 participants</option>
+    <option value="82">82 participants</option>
+    <option value="83">83 participants</option>
+    <option value="84">84 participants</option>
+    <option value="85">85 participants</option>
+    <option value="86">86 participants</option>
+    <option value="87">87 participants</option>
+    <option value="88">88 participants</option>
+    <option value="89">89 participants</option>
+    <option value="90">90 participants</option>
+
+    <option value="91">91 participants</option>
+    <option value="92">92 participants</option>
+    <option value="93">93 participants</option>
+    <option value="94">94 participants</option>
+    <option value="95">95 participants</option>
+    <option value="96">96 participants</option>
+    <option value="97">97 participants</option>
+    <option value="98">98 participants</option>
+    <option value="99">99 participants</option>
+    <option value="100">100 participants</option>
+</select>
+<div class="summary">
+    <strong id="totalAmount">Registration contribution: ₹100</strong>
+    <br>
+    <small>Contribution: ₹100 per participant</small>
+</div>
+
+<button type="submit" class="btn">Continue to payment →</button>
+</form>
+</div>
+<div id="payment" class="page"style="display:block"><h2>Payment & Slot Selection</h2><p class="sub">Pay the contribution and select your seat(s).</p><div class="qrbox"><strong>Scan this UPI QR to pay</strong><p class="notice">Organizer: Scan This Qr Code and make payment and put receipt in the file.</p><img id="qr" alt="Payment QR placeholder" src="mandaravQr.png"><label>Upload payment screenshot (demo only)</label><input type="file" id="proof" accept="image/*"></div><div class="summary" id="paySummary"></div><label>Select available seat(s)</label><p class="notice">Seats are numbered 001–100. This demo saves reservations only in this browser and is not shared with other visitors.</p><div id="slots" class="slots"></div><button class="btn secondary" id="submitBooking">Submit for payment verification</button><button class="btn" id="back">← Back</button></div>
+<div id="done" class="page"><h2>Submission saved (demo)</h2><p class="sub">Your payment and seat selection are awaiting verification.</p><div class="summary" id="result"></div><button class="btn" id="again">Register another</button></div>
+</section></main>
+<footer>International TBM Youth Sangha<br><a href="https://youtube.com/@mandaravaamaurya?si=EicJb4PUjGsY2OTB">YouTube</a> · <a href="https://chat.whatsapp.com/HCvELWtx0x58Pci13FX279">WhatsApp</a> · <a href="file:///C:/Users/246838/Downloads/Kistigrabhatrust.html" ;return false">Contact</a></footer></div>
+<script>
+const $ = id => document.getElementById(id);
+
+const contributionPerPerson = 100;
+let formData = null;
+let selectedSeats = [];
+
+const pages = ["register", "payment", "done"];
+
+function show(page) {
+    pages.forEach(id => {
+        $(id).style.display = id === page ? "block" : "none";
+    });
+}
+
+function calculateContribution() {
+    const participants = Number($("participants").value || 0);
+    const total = participants * contributionPerPerson;
+
+    $("totalAmount").textContent =
+        "Registration contribution: ₹" + total;
+}
+
+$("participants").addEventListener("change", calculateContribution);
+
+function readSeats() {
+    try {
+        return JSON.parse(localStorage.getItem("tbmDemoSeats") || "[]");
+    } catch {
+        return [];
+    }
+}
+
+function renderSeats() {
+    const booked = readSeats();
+
+    $("slots").innerHTML = Array.from({ length: 100 }, (_, i) => {
+        const n = i + 1;
+        const taken = booked.includes(n);
+        const picked = selectedSeats.includes(n);
+
+        return `
+            <button type="button"
+                class="slot ${taken ? "booked" : ""} ${picked ? "selected" : ""}"
+                ${taken ? "disabled" : ""}
+                data-seat="${n}">
+                <strong>${String(n).padStart(3, "0")}</strong>
+                <small>${taken ? "Booked" : picked ? "Selected" : "Available"}</small>
+            </button>
+        `;
+    }).join("");
+}
+
+$("form").addEventListener("submit", function(e) {
+
+
+    alert("Form submit is working!");
+
+    e.preventDefault();
+
+    formData = Object.fromEntries(new FormData(e.target).entries());
+
+    selectedSeats = [];
+
+    const n = Number(formData.participants);
+
+    $("paySummary").innerHTML = `
+        <strong>${formData.name}</strong> · ${formData.city}<br>
+        Participants: ${n}<br>
+        Contribution: ₹${n * contributionPerPerson}<br>
+        Please select ${n} seat(s).
+    `;
+alert("Payment page is opening");
+    show("payment");
+    renderSeats();
+});
+
+$("slots").addEventListener("click", function(e) {
+    const button = e.target.closest("[data-seat]");
+    if (!button || !formData) return;
+
+    const n = Number(button.dataset.seat);
+
+    if (selectedSeats.includes(n)) {
+        selectedSeats = selectedSeats.filter(x => x !== n);
+    } else if (selectedSeats.length < Number(formData.participants)) {
+        selectedSeats.push(n);
+    }
+
+    renderSeats();
+});
+
+$("back").onclick = () => show("register");
+$("submitBooking").onclick = () => {
+// Receipt Validation
+if (!$("proof").files.length) {
+    alert("Please upload your payment receipt first.");
+    return;
+}
+
+
+    // Seat validation
+
+    if (selectedSeats.length !== Number(formData.participants)) {
+        alert(`Please select exactly ${formData.participants} seat(s).`);
+        return;
+    }
+
+    let booked = readSeats();
+
+    if (selectedSeats.some(n => booked.includes(n))) {
+        alert("A selected seat has just been taken. Please select again.");
+        selectedSeats = [];
+        renderSeats();
+        return;
+    }
+
+    booked = [...booked, ...selectedSeats];
+    localStorage.setItem("tbmDemoSeats", JSON.stringify(booked));
+
+    const id = "TBM-" + Date.now().toString().slice(-8);
+
+    $("result").innerHTML = `
+        Booking ID: ${id}<br>
+        Name: ${formData.name}<br>
+        Participants: ${formData.participants}<br>
+        Seat(s): ${selectedSeats.map(n => String(n).padStart(3, "0")).join(", ")}<br>
+        Amount due: ₹${Number(formData.participants) * 100}<br>
+        <strong>Status: Payment verification pending</strong><br>
+        <small>Demo only: Payment has not been verified.</small>
+    `;
+
+    show("done");
+};
+
+$("again").onclick = () => {
+    $("form").reset();
+
+
+    formData = null;
+    selectedSeats = [];
+    calculateContribution();
+    show("register");
+};
+
+calculateContribution();
+show("register");
+
+// ===== Website Theme Switcher =====
+
+document.querySelectorAll(".pill[data-theme]").forEach(button => {
+    button.addEventListener("click", function () {
+
+        const theme = this.dataset.theme;
+
+        document.body.classList.remove(
+            "theme-yellow",
+            "theme-red"
+        );
+
+        if (theme === "yellow") {
+            document.body.classList.add("theme-yellow");
+        }
+
+        if (theme === "red") {
+            document.body.classList.add("theme-red");
+        }
+
+    });
+});
+
+</script></body></html>
